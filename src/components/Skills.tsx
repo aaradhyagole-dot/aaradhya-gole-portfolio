@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import { 
@@ -43,7 +44,7 @@ const SkillPill = ({ name, className = "" }: { name: string; className?: string 
   </div>
 );
 
-const ToolLogo = ({ icon: Icon, name, color }: { icon: any; name: string; color: string }) => (
+const ToolLogo = ({ icon: Icon, name, color }: { icon: React.ElementType; name: string; color: string }) => (
   <div className="flex flex-col items-center justify-center gap-4 px-16 group cursor-pointer transition-all duration-500">
     <div className="relative">
       <div 

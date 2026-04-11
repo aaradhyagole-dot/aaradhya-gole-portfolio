@@ -32,8 +32,8 @@ export default function Navbar() {
   return (
     <motion.nav
       style={{ 
-        backgroundColor: navBg as any,
-        backdropFilter: navBlur as any
+        backgroundColor: navBg as unknown as string,
+        backdropFilter: navBlur as unknown as string
       }}
       className={`fixed top-0 left-0 w-full z-50 px-8 lg:px-16 transition-all duration-300 ${
         isScrolled ? "py-4 border-b border-white/5" : "py-8"

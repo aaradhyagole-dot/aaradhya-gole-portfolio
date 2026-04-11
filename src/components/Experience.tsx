@@ -53,7 +53,7 @@ export default function Experience() {
           <div className="hidden md:block absolute left-1/2 top-4 bottom-4 w-[1px] bg-blue-500/20 -translate-x-1/2" />
 
           <div className="flex flex-col gap-16 md:gap-24">
-            {EXPERIENCES.map((exp, index) => (
+            {EXPERIENCES.map((exp) => (
               <motion.div
                 key={exp.id}
                 initial={{ opacity: 0, y: 30 }}
