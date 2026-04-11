@@ -1,11 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Mail } from "lucide-react";
-import { FaInstagram, FaLinkedin , FaGithub, FaTwitter, FaYoutube} from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithub, FaTwitter, FaEnvelope, FaArrowRight, FaYoutube } from "react-icons/fa";
 
 export default function Contact() {
-
+  const currentYear = new Date().getFullYear();
 
   return (
     <section id="contact" className="relative w-full bg-[#121212] pt-24 pb-12 px-8 lg:px-16 overflow-hidden">
@@ -58,9 +57,9 @@ export default function Contact() {
             <p className="text-white/40 text-xs font-bold uppercase tracking-[0.2em] mb-6">Social</p>
             <div className="flex flex-col space-y-2">
               {[
-      { name: "LinkedIn", href: "https://www.linkedin.com/in/aaradhya-gole-csm%C2%AE-80aa84245/", icon: FaLinkedin },
-                { name: "Gmail", href: "mailto:aaradhyagole@gmail.com", icon: Mail },
-      { name: "Instagram", href: "https://instagram.com/aaradhyagole", icon: FaInstagram },
+                { name: "LinkedIn", href: "https://www.linkedin.com/in/aaradhya-gole-csm%C2%AE-80aa84245/", icon: FaLinkedin },
+                { name: "Gmail", href: "mailto:aaradhyagole@gmail.com", icon: FaEnvelope },
+                { name: "Instagram", href: "https://instagram.com/aaradhyagole", icon: FaInstagram },
               ].map((item) => (
                 <a
                   key={item.name}
@@ -70,7 +69,7 @@ export default function Contact() {
                   className="group flex items-center justify-between py-3 border-b border-white/5 text-lg text-white/80 hover:text-blue-400 transition-all"
                 >
                   <span className="font-light">{item.name}</span>
-                  <ArrowUpRight className="w-5 h-5 opacity-40 group-hover:opacity-100 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                  <FaArrowRight className="w-5 h-5 opacity-40 group-hover:opacity-100 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>
               ))}
             </div>
