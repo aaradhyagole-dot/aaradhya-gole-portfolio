@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react";
 
 export default function Contact() {
-  const currentYear = new Date().getFullYear();
+
 
   return (
     <section id="contact" className="relative w-full bg-[#121212] pt-24 pb-12 px-8 lg:px-16 overflow-hidden">
