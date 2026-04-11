@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react";
+import { ArrowUpRight, Mail, Linkedin } from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
 
@@ -59,7 +60,7 @@ export default function Contact() {
               {[
                 { name: "LinkedIn", href: "https://www.linkedin.com/in/aaradhya-gole-csm%C2%AE-80aa84245/", icon: Linkedin },
                 { name: "Gmail", href: "mailto:aaradhyagole@gmail.com", icon: Mail },
-                { name: "Instagram", href: "https://instagram.com/aaradhyagole", icon: Instagram },
+                { name: "Instagram", href: "https://instagram.com/aaradhyagole", icon: FaInstagram },
               ].map((item) => (
                 <a
                   key={item.name}
