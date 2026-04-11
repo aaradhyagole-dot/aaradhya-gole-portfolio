@@ -3,16 +3,13 @@
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import { 
-  SiPowerbi, 
   SiSap, 
-  SiOracle, 
   SiPython, 
-  SiMicrosoftexcel, 
   SiJira, 
   SiPostgresql, 
   SiQlik, 
   SiMicrostrategy,
-  SiTableau
+  SiDatacamp
 } from "react-icons/si";
 
 const FUNCTIONS = [
@@ -27,17 +24,17 @@ const FUNCTIONS = [
 ];
 
 const TOOLS = [
-  { name: "Power BI", icon: SiPowerbi, color: "#F2C811" },
+  { name: "Power BI", icon: SiDatacamp, color: "#F2C811" },
   { name: "SAP ERP", icon: SiSap, color: "#008FD3" },
-  { name: "Oracle ERP", icon: SiOracle, color: "#F80000" },
+  { name: "Oracle ERP", icon: SiDatacamp, color: "#F80000" },
   { name: "SQL", icon: SiPostgresql, color: "#336791" },
   { name: "Python", icon: SiPython, color: "#3776AB" },
   { name: "SAP Ariba", icon: SiSap, color: "#008FD3" },
   { name: "Qlik", icon: SiQlik, color: "#458C27" },
   { name: "MicroStrategy", icon: SiMicrostrategy, color: "#D12127" },
-  { name: "Excel", icon: SiMicrosoftexcel, color: "#217346" },
+  { name: "Excel", icon: SiDatacamp, color: "#217346" },
   { name: "JIRA", icon: SiJira, color: "#0052CC" },
-  { name: "Tableau", icon: SiTableau, color: "#E97627" }
+  { name: "Tableau", icon: SiDatacamp, color: "#E97627" }
 ];
 
 const SkillPill = ({ name, className = "" }: { name: string; className?: string }) => (
