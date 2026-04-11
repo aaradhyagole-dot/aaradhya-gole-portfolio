@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Mail, Linkedin } from "lucide-react";
-import { FaInstagram } from "react-icons/fa";
+import { ArrowUpRight, Mail, Instagram } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
 
@@ -58,9 +58,9 @@ export default function Contact() {
             <p className="text-white/40 text-xs font-bold uppercase tracking-[0.2em] mb-6">Social</p>
             <div className="flex flex-col space-y-2">
               {[
-                { name: "LinkedIn", href: "https://www.linkedin.com/in/aaradhya-gole-csm%C2%AE-80aa84245/", icon: Linkedin },
+      { name: "LinkedIn", href: "https://www.linkedin.com/in/aaradhya-gole-csm%C2%AE-80aa84245/", icon: FaLinkedin },
                 { name: "Gmail", href: "mailto:aaradhyagole@gmail.com", icon: Mail },
-                { name: "Instagram", href: "https://instagram.com/aaradhyagole", icon: FaInstagram },
+      { name: "Instagram", href: "https://instagram.com/aaradhyagole", icon: Instagram },
               ].map((item) => (
                 <a
                   key={item.name}
