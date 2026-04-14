@@ -125,7 +125,7 @@ export default function Skills() {
           <div className="py-20 border-y border-white/5 bg-white/[0.01] backdrop-blur-3xl">
             <Marquee 
               gradient={true} 
-              gradientColor={[18, 18, 18]} 
+              gradientColor="rgb(18, 18, 18)"
               speed={60} 
               pauseOnHover={true}
             >
@@ -141,3 +141,4 @@ export default function Skills() {
     </section>
   );
 }
+
