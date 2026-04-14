@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import { 
   SiSap, 
@@ -68,7 +68,7 @@ const ToolLogo = ({ icon: Icon, name, color }: { icon: React.ElementType; name: 
 );
 
 export default function Skills() {
-    const containerVariants: any = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -78,7 +78,7 @@ export default function Skills() {
     }
   };
 
-  const itemVariants: any = { 
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,

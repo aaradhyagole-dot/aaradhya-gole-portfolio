@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Transition, Variants } from "framer-motion";
 import { ChevronLeft, ChevronRight, Award, ExternalLink } from "lucide-react";
 
 const CERTIFICATIONS = [
@@ -37,7 +37,7 @@ export default function Certifications() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
 
-  const slideVariants = {
+  const slideVariants: Variants = {
     enter: (direction: number) => ({
       x: direction > 0 ? 500 : -500,
       opacity: 0
@@ -104,7 +104,7 @@ export default function Certifications() {
                   transition={{
                     x: { type: "spring", stiffness: 300, damping: 30 },
                     opacity: { duration: 0.2 }
-                  }}
+                  } as Transition}
                   className="w-full max-w-[650px] min-h-[580px] rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl flex flex-col overflow-hidden shadow-2xl"
                 >
                   {/* Poster Image or Placeholder */}

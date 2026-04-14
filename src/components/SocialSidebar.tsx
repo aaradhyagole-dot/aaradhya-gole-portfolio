@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Transition } from "framer-motion";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
@@ -32,7 +32,7 @@ export default function SocialSidebar() {
     <motion.div 
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: 1, duration: 0.8 }}
+      transition={{ delay: 1, duration: 0.8 } as Transition}
       className="fixed bottom-12 left-8 z-[100] hidden md:block"
     >
       <div className="flex flex-col items-center gap-6 py-4">
