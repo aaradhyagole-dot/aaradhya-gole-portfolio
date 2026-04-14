@@ -25,17 +25,17 @@ const FUNCTIONS = [
 ];
 
 const TOOLS = [
-  { name: "Power BI", image: "/logos/power-bi.png", color: "#F2C811" },
+  { name: "Power BI", image: "/logos/PowerBi.png", color: "#F2C811" },
   { name: "SAP ERP", image: "/logos/sap.png", color: "#008FD3" },
-  { name: "Oracle ERP", image: "/logos/oracle.png", color: "#FF8C00" },
+  { name: "Oracle ERP", image: "/logos/Oracle.png", color: "#FF8C00" },
   { name: "SQL", icon: SiPostgresql, color: "#336791" },
   { name: "Python", image: "/logos/python.png", color: "#FFE873" },
   { name: "SAP Ariba", image: "/logos/sap-ariba.png", color: "#008FD3" },
   { name: "Qlik", image: "/logos/qlik.png", color: "#458C27" },
   { name: "MicroStrategy", image: "/logos/microstrategy.png", color: "#D12127" },
-  { name: "Excel", image: "/logos/excel.png", color: "#217346" },
+  { name: "Excel", image: "/logos/Excel.png", color: "#217346" },
   { name: "JIRA", image: "/logos/jira.png", color: "#0052CC" },
-  { name: "Tableau", image: "/logos/tableau.png", color: "#0064D2" }
+  { name: "Tableau", image: "/logos/Tableau-Logo-PNG-HD.png", color: "#0064D2" }
 ];
 
 const SkillPill = ({ name, className = "" }: { name: string; className?: string }) => (
