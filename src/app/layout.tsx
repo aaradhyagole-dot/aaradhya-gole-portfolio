@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Creative Developer Portfolio",
-  description: "High-end scrollytelling portfolio",
+  title: "Supply Chain Specialist Portfolio",
+  description: "High-end scrollytelling portfolio for Aaradhya Gole",
 };
 
 export default function RootLayout({
