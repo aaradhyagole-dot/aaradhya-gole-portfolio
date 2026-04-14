@@ -10,10 +10,7 @@ import {
   SiPostgresql, 
   SiQlik, 
   SiMicrostrategy,
-  SiPowerbi,
-  SiOracle,
-  SiMicrosoftexcel,
-  SiTableau
+  SiDatacamp
 } from "react-icons/si";
 
 const FUNCTIONS = [
@@ -28,17 +25,17 @@ const FUNCTIONS = [
 ];
 
 const TOOLS = [
-  { name: "Power BI", icon: SiPowerbi, color: "#F2C811" },
-  { name: "SAP ERP", icon: SiSap, color: "#008FD3" },
-  { name: "Oracle ERP", icon: SiOracle, color: "#F80000" },
+  { name: "Power BI", image: "/logos/power-bi.png", color: "#F2C811" },
+  { name: "SAP ERP", image: "/logos/sap.png", color: "#008FD3" },
+  { name: "Oracle ERP", image: "/logos/oracle.png", color: "#FF8C00" },
   { name: "SQL", icon: SiPostgresql, color: "#336791" },
-  { name: "Python", icon: SiPython, color: "#3776AB" },
-  { name: "SAP Ariba", icon: SiSap, color: "#008FD3" },
-  { name: "Qlik", icon: SiQlik, color: "#458C27" },
-  { name: "MicroStrategy", icon: SiMicrostrategy, color: "#D12127" },
-  { name: "Excel", icon: SiMicrosoftexcel, color: "#217346" },
-  { name: "JIRA", icon: SiJira, color: "#0052CC" },
-  { name: "Tableau", icon: SiTableau, color: "#E97627" }
+  { name: "Python", image: "/logos/python.png", color: "#FFE873" },
+  { name: "SAP Ariba", image: "/logos/sap-ariba.png", color: "#008FD3" },
+  { name: "Qlik", image: "/logos/qlik.png", color: "#458C27" },
+  { name: "MicroStrategy", image: "/logos/microstrategy.png", color: "#D12127" },
+  { name: "Excel", image: "/logos/excel.png", color: "#217346" },
+  { name: "JIRA", image: "/logos/jira.png", color: "#0052CC" },
+  { name: "Tableau", image: "/logos/tableau.png", color: "#0064D2" }
 ];
 
 const SkillPill = ({ name, className = "" }: { name: string; className?: string }) => (
@@ -47,22 +44,30 @@ const SkillPill = ({ name, className = "" }: { name: string; className?: string 
   </div>
 );
 
-const ToolLogo = ({ icon: Icon, name, color }: { icon: React.ElementType; name: string; color: string }) => (
+const ToolLogo = ({ icon: Icon, image, name, color }: { icon?: React.ElementType; image?: string; name: string; color: string }) => (
   <div className="flex flex-col items-center justify-center gap-4 px-16 group cursor-pointer transition-all duration-500">
     <div className="relative">
       <div 
-        className="absolute inset-0 blur-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-500"
+        className="absolute inset-0 blur-2xl opacity-0 group-hover:opacity-40 transition-opacity duration-500 rounded-full"
         style={{ backgroundColor: color }}
       />
-      {Icon ? (
-        <Icon 
-          className="text-6xl md:text-7xl text-white/30 group-hover:text-white transition-all duration-500 transform group-hover:scale-110 relative z-10" 
-        />
-      ) : (
-        <div className="text-4xl md:text-5xl font-bold text-white/20 group-hover:text-white transition-all duration-500 relative z-10">
-          {name.charAt(0)}
-        </div>
-      )}
+      <div className="relative z-10 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-500">
+        {image ? (
+          <img 
+            src={image} 
+            alt={name} 
+            className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
+          />
+        ) : Icon ? (
+          <Icon 
+            className="text-6xl md:text-7xl text-white/30 group-hover:text-white transition-all duration-500" 
+          />
+        ) : (
+          <div className="text-4xl md:text-5xl font-bold text-white/20 group-hover:text-white transition-all duration-500">
+            {name.charAt(0)}
+          </div>
+        )}
+      </div>
     </div>
     <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-white/20 group-hover:text-white/60 transition-colors duration-500">
       {name}
