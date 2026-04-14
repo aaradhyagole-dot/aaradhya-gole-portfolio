@@ -34,7 +34,7 @@ const TOOLS = [
   { name: "Qlik", image: "/logos/Qlik.png", color: "#458C27" },
   { name: "MicroStrategy", image: "/logos/Microstrategy-Data-Analytics-Visualization-Technique-PNG-thumb.png", color: "#D12127" },
   { name: "Excel", image: "/logos/Excel.png", color: "#217346" },
-  { name: "JIRA", image: "/logos/jira.png", color: "#0052CC" },
+  { name: "JIRA", image: "/logos/Jira.png", color: "#0052CC" },
   { name: "Tableau", image: "/logos/Tableau-Logo-PNG-HD.png", color: "#0064D2" }
 ];
 
