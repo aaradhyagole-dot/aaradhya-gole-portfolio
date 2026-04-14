@@ -10,7 +10,10 @@ import {
   SiPostgresql, 
   SiQlik, 
   SiMicrostrategy,
-  SiDatacamp
+  SiPowerbi,
+  SiOracle,
+  SiMicrosoftexcel,
+  SiTableau
 } from "react-icons/si";
 
 const FUNCTIONS = [
@@ -25,17 +28,17 @@ const FUNCTIONS = [
 ];
 
 const TOOLS = [
-  { name: "Power BI", icon: SiDatacamp, color: "#F2C811" },
+  { name: "Power BI", icon: SiPowerbi, color: "#F2C811" },
   { name: "SAP ERP", icon: SiSap, color: "#008FD3" },
-  { name: "Oracle ERP", icon: SiDatacamp, color: "#F80000" },
+  { name: "Oracle ERP", icon: SiOracle, color: "#F80000" },
   { name: "SQL", icon: SiPostgresql, color: "#336791" },
   { name: "Python", icon: SiPython, color: "#3776AB" },
   { name: "SAP Ariba", icon: SiSap, color: "#008FD3" },
   { name: "Qlik", icon: SiQlik, color: "#458C27" },
   { name: "MicroStrategy", icon: SiMicrostrategy, color: "#D12127" },
-  { name: "Excel", icon: SiDatacamp, color: "#217346" },
+  { name: "Excel", icon: SiMicrosoftexcel, color: "#217346" },
   { name: "JIRA", icon: SiJira, color: "#0052CC" },
-  { name: "Tableau", icon: SiDatacamp, color: "#E97627" }
+  { name: "Tableau", icon: SiTableau, color: "#E97627" }
 ];
 
 const SkillPill = ({ name, className = "" }: { name: string; className?: string }) => (
@@ -125,7 +128,7 @@ export default function Skills() {
           <div className="py-20 border-y border-white/5 bg-white/[0.01] backdrop-blur-3xl">
             <Marquee 
               gradient={true} 
-              gradientColor="rgb(18, 18, 18)"
+              gradientColor="rgb(18, 18, 18)" 
               speed={60} 
               pauseOnHover={true}
             >
@@ -141,4 +144,3 @@ export default function Skills() {
     </section>
   );
 }
-
